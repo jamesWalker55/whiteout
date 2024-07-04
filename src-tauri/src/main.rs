@@ -1,6 +1,11 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
+use single_instance::SingleInstance;
+
 fn main() {
+    let instance = SingleInstance::new("whiteout-026d707e").unwrap();
+    assert!(instance.is_single());
+
     tauri::Builder::default()
         .invoke_handler(tauri::generate_handler![])
         .setup(|app| {

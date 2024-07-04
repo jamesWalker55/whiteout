@@ -2453,16 +2453,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "tauri-1.4-starter"
-version = "0.0.0"
-dependencies = [
- "serde",
- "serde_json",
- "tauri",
- "tauri-build",
-]
-
-[[package]]
 name = "tao"
 version = "0.16.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3214,6 +3204,16 @@ dependencies = [
  "windows 0.39.0",
  "windows-bindgen",
  "windows-metadata",
+]
+
+[[package]]
+name = "whiteout"
+version = "0.0.0"
+dependencies = [
+ "serde",
+ "serde_json",
+ "tauri",
+ "tauri-build",
 ]
 
 [[package]]
